@@ -1,4 +1,11 @@
 <footer class="footer">
+  @if (address.length) {
+    <address class="footer__address">
+      @for (line of address; track line) {
+        <span>{{ line }}</span>
+      }
+    </address>
+  }
   <p>&copy; {{ year }} {{ name }}. All rights reserved.</p>
   <p class="footer__muted">Built with Angular.</p>
 </footer>

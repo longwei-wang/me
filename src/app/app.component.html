@@ -4,7 +4,11 @@
   <main class="layout__main">
     <div class="layout__content">
       <router-outlet></router-outlet>
-      <app-footer [name]="(profile$ | async)?.name ?? ''"></app-footer>
+      @if (profile$ | async; as profile) {
+        <app-footer [name]="profile.name" [address]="profile.contact.address"></app-footer>
+      } @else {
+        <app-footer></app-footer>
+      }
     </div>
   </main>
 </div>

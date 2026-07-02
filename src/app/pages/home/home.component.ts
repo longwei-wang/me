@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { AsyncPipe } from '@angular/common';
+import { AsyncPipe, NgOptimizedImage } from '@angular/common';
 
 import { ContentService } from '../../services/content.service';
 import { SectionComponent } from '../../shared/section/section.component';
@@ -7,7 +7,7 @@ import { SectionComponent } from '../../shared/section/section.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [AsyncPipe, SectionComponent],
+  imports: [AsyncPipe, NgOptimizedImage, SectionComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
@@ -15,4 +15,5 @@ import { SectionComponent } from '../../shared/section/section.component';
 export class HomeComponent {
   private readonly content = inject(ContentService);
   readonly home$ = this.content.getHome();
+  readonly profile$ = this.content.getProfile();
 }
