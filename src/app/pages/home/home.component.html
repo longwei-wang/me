@@ -1,5 +1,42 @@
 @if (home$ | async; as home) {
   <div class="page">
+    @if (profile$ | async; as profile) {
+      <header class="intro">
+        <img
+          class="intro__photo"
+          [ngSrc]="profile.photo"
+          width="160"
+          height="160"
+          priority
+          [alt]="profile.name"
+        />
+        <div class="intro__text">
+          <h1 class="intro__name">{{ profile.name }}</h1>
+          <p class="intro__title">{{ profile.title }}</p>
+          <ul class="intro__affiliations">
+            @for (line of profile.affiliations; track line) {
+              <li>{{ line }}</li>
+            }
+          </ul>
+
+          <div class="intro__contact">
+            <a [href]="'mailto:' + profile.contact.email">{{ profile.contact.email }}</a>
+            @if (profile.contact.phone) {
+              <span>{{ profile.contact.phone }}</span>
+            }
+          </div>
+
+          @if (profile.social.length) {
+            <ul class="intro__social">
+              @for (link of profile.social; track link.label) {
+                <li><a [href]="link.url" target="_blank" rel="noopener">{{ link.label }}</a></li>
+              }
+            </ul>
+          }
+        </div>
+      </header>
+    }
+
     <app-section heading="About" anchor="about">
       @for (para of home.about; track $index) {
         <p>{{ para }}</p>

@@ -13,3 +13,18 @@
 .footer__muted {
   opacity: 0.8;
 }
+
+/* Address only appears in the footer on mobile (it's in the sidebar on desktop). */
+.footer__address {
+  display: none;
+}
+
+@media (max-width: 60rem) {
+  .footer__address {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    font-style: normal;
+    margin-bottom: 0.75rem;
+  }
+}

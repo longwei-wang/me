@@ -1,72 +1,42 @@
 <aside class="sidebar">
-  @if (profile$ | async; as profile) {
-    <header class="profile">
-      <img
-        class="profile__photo"
-        [ngSrc]="profile.photo"
-        width="160"
-        height="160"
-        priority
-        [alt]="profile.name"
-      />
-      <h1 class="profile__name">{{ profile.name }}</h1>
-      <p class="profile__title">{{ profile.title }}</p>
-      <ul class="profile__affiliations">
-        @for (line of profile.affiliations; track line) {
-          <li>{{ line }}</li>
-        }
-      </ul>
-    </header>
+  <button
+    class="nav-toggle"
+    type="button"
+    [attr.aria-expanded]="open()"
+    aria-controls="primary-nav"
+    (click)="toggle()"
+  >
+    <span class="nav-toggle__bar"></span>
+    <span class="nav-toggle__label">Menu</span>
+  </button>
 
-    <div class="profile__details">
-      <address class="profile__contact">
+  <nav id="primary-nav" class="nav" [class.nav--open]="open()" aria-label="Primary">
+    @for (group of nav; track group.label) {
+      <div class="nav__group">
+        <p class="nav__group-label">{{ group.label }}</p>
+        <ul class="nav__list">
+          @for (link of group.links; track link.path) {
+            <li>
+              <a
+                [routerLink]="link.path"
+                routerLinkActive="nav__link--active"
+                [routerLinkActiveOptions]="{ exact: link.path === '/' }"
+                (click)="close()"
+              >{{ link.label }}</a>
+            </li>
+          }
+        </ul>
+      </div>
+    }
+  </nav>
+
+  @if (profile$ | async; as profile) {
+    <div class="contact">
+      <address class="contact__lines">
         @for (line of profile.contact.address; track line) {
           <span>{{ line }}</span>
         }
-        <a [href]="'mailto:' + profile.contact.email">{{ profile.contact.email }}</a>
-        @if (profile.contact.phone) {
-          <span>{{ profile.contact.phone }}</span>
-        }
       </address>
-
-      @if (profile.social.length) {
-        <ul class="profile__social">
-          @for (link of profile.social; track link.label) {
-            <li><a [href]="link.url" target="_blank" rel="noopener">{{ link.label }}</a></li>
-          }
-        </ul>
-      }
     </div>
-
-    <button
-      class="nav-toggle"
-      type="button"
-      [attr.aria-expanded]="open()"
-      aria-controls="primary-nav"
-      (click)="toggle()"
-    >
-      <span class="nav-toggle__bar"></span>
-      <span class="nav-toggle__label">Menu</span>
-    </button>
-
-    <nav id="primary-nav" class="nav" [class.nav--open]="open()" aria-label="Primary">
-      @for (group of nav; track group.label) {
-        <div class="nav__group">
-          <p class="nav__group-label">{{ group.label }}</p>
-          <ul class="nav__list">
-            @for (link of group.links; track link.path) {
-              <li>
-                <a
-                  [routerLink]="link.path"
-                  routerLinkActive="nav__link--active"
-                  [routerLinkActiveOptions]="{ exact: link.path === '/' }"
-                  (click)="close()"
-                >{{ link.label }}</a>
-              </li>
-            }
-          </ul>
-        </div>
-      }
-    </nav>
   }
 </aside>
