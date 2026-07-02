@@ -1,0 +1,21 @@
+<div class="page">
+  <h1 class="page__title">Group</h1>
+
+  @if (current().length) {
+    <h2 class="group__subtitle">Current Members</h2>
+    <div class="group__grid">
+      @for (member of current(); track member.name) {
+        <app-member-card [member]="member" />
+      }
+    </div>
+  }
+
+  @if (former().length) {
+    <h2 class="group__subtitle">Former Members</h2>
+    <div class="group__grid">
+      @for (member of former(); track member.name) {
+        <app-member-card [member]="member" />
+      }
+    </div>
+  }
+</div>

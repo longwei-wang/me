@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Ifrat Ikhtear Uddin",
+    "role": "Ph.D. Student, Computer Science",
+    "status": "current",
+    "startDate": "January 2025",
+    "photo": "assets/img/avatar.svg",
+    "bio": "Working on Explainable AI",
+    "email": "ifratikhtear.uddin@coyotes.usd.edu",
+    "website": "https://ifratmitul.github.io/ifrat/"
+  },
+  {
+    "name": "Junjie Wu",
+    "role": "Ph.D. Student, Computer Engineering",
+    "status": "current",
+    "startDate": "January 2026",
+    "photo": "assets/img/avatar.svg",
+    "bio": "Researching joint communication and sensing waveforms.",
+    "email": "jwu@example.edu"
+  },
+  {
+    "name": "Abel Calvet",
+    "role": "M.S. Student, Computer Science",
+    "status": "current",
+    "startDate": "January 2026",
+    "photo": "assets/img/avatar.svg",
+    "bio": "Building testbeds for reconfigurable intelligent surfaces.",
+    "email": "acalvet@example.edu"
+  },
+  {
+    "name": "Erbey Uribe",
+    "role": "Graduate Researcher",
+    "status": "former",
+    "bio": "Developed a Raspberry Pi beam adaptation system."
+  }
+]

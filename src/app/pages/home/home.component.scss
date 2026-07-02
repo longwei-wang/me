@@ -1,0 +1,74 @@
+.edu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.edu li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.1rem 1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.edu li:last-child {
+  border-bottom: none;
+}
+
+.edu__degree {
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.edu__inst {
+  color: var(--color-muted);
+  font-size: 0.92rem;
+}
+
+.edu__year {
+  grid-row: 1 / span 2;
+  grid-column: 2;
+  align-self: center;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.research {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.research__tag {
+  display: inline-block;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  background: var(--color-accent-soft);
+  border: 1px solid var(--color-border);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.awards {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.awards li {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.awards__year {
+  flex-shrink: 0;
+  width: 3.2rem;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--color-accent);
+}

@@ -1,0 +1,10 @@
+@if (projects$ | async; as projects) {
+  <div class="page">
+    <h1 class="page__title">Projects</h1>
+    <div class="projects__grid">
+      @for (project of projects; track project.title) {
+        <app-project-card [project]="project" />
+      }
+    </div>
+  </div>
+}

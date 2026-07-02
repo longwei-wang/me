@@ -1,0 +1,14 @@
+<div class="page">
+  <h1 class="page__title">Publications</h1>
+
+  @for (group of groups(); track group.year) {
+    <section class="pub-year">
+      <h2 class="pub-year__label">{{ group.year }}</h2>
+      <div class="pub-year__list">
+        @for (pub of group.items; track pub.title) {
+          <app-publication-item [publication]="pub" />
+        }
+      </div>
+    </section>
+  }
+</div>

@@ -1,0 +1,17 @@
+{
+  "name": "Longwei Wang",
+  "title": "Assistant Professor",
+  "affiliations": [
+    "Department of Computer Science",
+    "University of South Dakota"
+  ],
+  "photo": "assets/img/head-shot.jpeg",
+  "contact": {
+    "address": ["202 Arts & Sciences, UAS", "414 E. Clark Street, Vermillion, SD 57069", "United States"],
+    "email": "longwei.wang@usd.edu"
+  },
+  "social": [
+    { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=nRGDT_sAAAAJ&hl=en" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/longwei-wang-77597810a/" }
+  ]
+}

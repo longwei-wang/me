@@ -1,0 +1,10 @@
+@if (courses$ | async; as courses) {
+  <div class="page">
+    <h1 class="page__title">Teaching</h1>
+    <div class="courses__list">
+      @for (course of courses; track course.code) {
+        <app-course-item [course]="course" />
+      }
+    </div>
+  </div>
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Terahertz Beam Management",
+    "summary": "Machine-learning-driven beam alignment and tracking for ultra-high-bandwidth THz links in mobile environments.",
+    "thumbnail": "assets/img/project-cover.svg",
+    "tags": ["THz", "Machine Learning", "Beamforming"],
+    "funding": "Supported by NSF CAREER Award"
+  },
+  {
+    "title": "Joint Communication and Sensing",
+    "summary": "Unified waveform design that lets a single radio sense its surroundings while transmitting data, enabling smart-environment applications.",
+    "thumbnail": "assets/img/project-cover.svg",
+    "tags": ["JCAS", "Waveform Design", "Sensing"],
+    "funding": "Supported by Google Research Scholar Award"
+  },
+  {
+    "title": "Reconfigurable Intelligent Surfaces",
+    "summary": "Programmable metasurfaces that reshape wireless propagation to improve coverage and energy efficiency in dense networks.",
+    "thumbnail": "assets/img/project-cover.svg",
+    "tags": ["RIS", "Metasurfaces", "Energy Efficiency"]
+  },
+  {
+    "title": "Edge Intelligence for Wireless Networks",
+    "summary": "Distributed, low-latency inference at the network edge for real-time control of communication systems.",
+    "thumbnail": "assets/img/project-cover.svg",
+    "tags": ["Edge Computing", "Distributed Systems"]
+  }
+]

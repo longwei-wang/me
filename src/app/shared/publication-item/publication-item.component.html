@@ -1,0 +1,15 @@
+<article class="pub">
+  <span class="pub__type pub__type--{{ publication.type }}">{{ publication.type }}</span>
+  <div class="pub__body">
+    <h3 class="pub__title">{{ publication.title }}</h3>
+    <p class="pub__authors">{{ publication.authors }}</p>
+    <p class="pub__venue">{{ publication.venue }}, {{ publication.year }}</p>
+    @if (publication.links?.length) {
+      <p class="pub__links">
+        @for (link of publication.links; track link.label) {
+          <a [href]="link.url" target="_blank" rel="noopener">{{ link.label }}</a>
+        }
+      </p>
+    }
+  </div>
+</article>

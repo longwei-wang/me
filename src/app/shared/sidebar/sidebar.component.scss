@@ -1,0 +1,206 @@
+:host {
+  display: block;
+}
+
+/* --- Profile header --- */
+.profile {
+  text-align: center;
+  padding: 1.75rem 1.5rem 1rem;
+}
+
+/* --- Contact + social details --- */
+.profile__details {
+  text-align: center;
+  padding: 0 1.5rem 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.profile__photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+  border: 3px solid var(--color-bg);
+  box-shadow: var(--shadow-md);
+  background: var(--color-panel);
+}
+
+.profile__name {
+  font-size: 1.35rem;
+  margin-bottom: 0.2rem;
+}
+
+.profile__title {
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  font-size: 0.95rem;
+}
+
+.profile__affiliations {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.9rem;
+  font-size: 0.82rem;
+  color: var(--color-muted);
+}
+
+.profile__affiliations li {
+  margin-bottom: 0.1rem;
+}
+
+.profile__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  font-style: normal;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  margin-bottom: 0.9rem;
+}
+
+.profile__social {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem 0.9rem;
+  padding: 0;
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.profile__social li { margin: 0; }
+
+/* --- Navigation --- */
+.nav {
+  padding: 1.25rem 1.5rem 1.75rem;
+}
+
+.nav__group {
+  margin-bottom: 1.1rem;
+}
+
+.nav__group-label {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__list li { margin: 0; }
+
+.nav__list a {
+  display: block;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  color: var(--color-body);
+  font-size: 0.95rem;
+  border-left: 3px solid transparent;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.nav__list a:hover {
+  background: var(--color-panel);
+  text-decoration: none;
+  color: var(--color-accent);
+}
+
+.nav__link--active {
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-weight: 600;
+  border-left-color: var(--color-accent);
+}
+
+/* --- Mobile nav toggle (hidden on desktop; nav is always shown there) --- */
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 60rem) {
+  /* Profile stays pinned and always visible; only the nav collapses. */
+  .nav-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 0.85rem 1.5rem;
+    background: var(--color-bg);
+    border: none;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    font: inherit;
+    font-weight: 600;
+    color: var(--color-ink);
+    cursor: pointer;
+  }
+
+  .nav-toggle__bar {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background: var(--color-ink);
+  }
+
+  .nav-toggle__bar::before,
+  .nav-toggle__bar::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background: var(--color-ink);
+  }
+
+  .nav-toggle__bar::before { top: -6px; }
+  .nav-toggle__bar::after { top: 6px; }
+
+  .nav {
+    display: none;
+  }
+
+  .nav--open {
+    display: block;
+  }
+
+  /* Collapse menu sits on top of everything; the basic info stays centered. */
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-toggle {
+    order: 1;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    border-top: none;
+  }
+
+  .nav { order: 2; }
+
+  .profile { order: 3; }
+
+  .profile__details {
+    order: 4;
+    border-bottom: none;
+    border-top: 1px solid var(--color-border);
+    padding-top: 1.25rem;
+  }
+
+  .profile__photo {
+    width: 120px;
+    height: 120px;
+  }
+}

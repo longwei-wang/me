@@ -1,0 +1,19 @@
+<article class="course">
+  <div class="course__code">{{ course.code }}</div>
+  <div class="course__body">
+    <h3 class="course__title">{{ course.title }}</h3>
+    @if (course.term || course.role) {
+      <p class="course__meta">
+        @if (course.term) {
+          <span class="course__term">{{ course.term }}</span>
+        }
+        @if (course.role) {
+          <span class="course__role">{{ course.role }}</span>
+        }
+      </p>
+    }
+    @if (course.description) {
+      <p class="course__desc">{{ course.description }}</p>
+    }
+  </div>
+</article>

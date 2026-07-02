@@ -1,0 +1,42 @@
+[
+  {
+    "authors": "L. Wang, J. Sigman, and A. Smith",
+    "title": "Learning-Based Beam Management for Terahertz Communications",
+    "venue": "IEEE Transactions on Wireless Communications",
+    "year": 2025,
+    "type": "journal",
+    "links": [{ "label": "PDF", "url": "#" }, { "label": "DOI", "url": "#" }]
+  },
+  {
+    "authors": "J. Wu, L. Wang, and R. Brown",
+    "title": "Joint Communication and Sensing with Reconfigurable Intelligent Surfaces",
+    "venue": "IEEE International Conference on Communications (ICC)",
+    "year": 2024,
+    "type": "conference",
+    "links": [{ "label": "PDF", "url": "#" }]
+  },
+  {
+    "authors": "L. Wang and K. Tribble",
+    "title": "Edge-Assisted Inference for Low-Latency Wireless Networks",
+    "venue": "IEEE Journal on Selected Areas in Communications",
+    "year": 2024,
+    "type": "journal",
+    "links": [{ "label": "PDF", "url": "#" }, { "label": "Code", "url": "#" }]
+  },
+  {
+    "authors": "A. Calvet, L. Wang, and M. Davis",
+    "title": "A Testbed for mmWave Channel Measurements in Indoor Environments",
+    "venue": "IEEE GLOBECOM",
+    "year": 2023,
+    "type": "conference",
+    "links": [{ "label": "PDF", "url": "#" }]
+  },
+  {
+    "authors": "L. Wang, V. Annabhemoju, and P. Lee",
+    "title": "Deep Reinforcement Learning for Dynamic Spectrum Access",
+    "venue": "arXiv preprint",
+    "year": 2023,
+    "type": "preprint",
+    "links": [{ "label": "arXiv", "url": "#" }]
+  }
+]

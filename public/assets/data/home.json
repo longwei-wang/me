@@ -1,0 +1,29 @@
+{
+  "about": [
+    "Longwei Wang is an Assistant Professor of Computer Science working on explainable machine learning and trustworthy AI, with a focus on the interplay among explainability, robustness, and security. His research tackles two core challenges in modern AI: the black-box nature of deep learning models and the prevalence of hallucinations and adversarial vulnerabilities in machine learning systems.",
+    "His group builds models that are both understandable to humans and resilient to adversarial attacks and uncertainty. With collaborators, he developed Winsor-CAM, an interpretable visual explanation framework for deep neural networks, and has contributed to the theory connecting explainability with adversarial robustness, with applications spanning medical image analysis, materials discovery, and precision agriculture. His work has appeared at venues including ICML, NeurIPS, TPAMI, ICDM, AAAI, and the ACM Web Conference, earning a Best Paper Award at ISPR 2025 and a NeurIPS 2025 Spotlight.",
+    "He serves the community as a Special Track and Workshop Chair for RTIP2R, a Program Committee member for ICML, NeurIPS, ICLR, AAAI, IJCAI, WWW, IEEE CAI, and IEEE CogMI, and as an Editor for the journal Symmetry. He is a member of IEEE and ACM."
+  ],
+  "education": [
+    { "degree": "Ph.D. in Computer Science", "institution": "Auburn University", "year": "2022" }
+  ],
+  "researchAreas": [
+    { "title": "Explainable AI" },
+    { "title": "Robust ML" },
+    { "title": "Trustworthy ML" }
+  ],
+  "awards": [
+    { "year": "2025", "description": "Best Research Faculty Award, USD Computer Science Department" },
+    { "year": "2024", "description": "Best Paper Award, IEEE International Conference on Communications (ICC)" },
+    { "year": "2023", "description": "College of Engineering Early Career Teaching Award" },
+    { "year": "2022", "description": "Google Research Scholar Award" },
+    { "year": "2021", "description": "IEEE ComSoc Outstanding Young Researcher Award" },
+    { "year": "2020", "description": "Graduate Research Excellence Fellowship" },
+    { "year": "2019", "description": "Best Student Paper Award, IEEE GLOBECOM" }
+  ],
+  "openings": [
+    "I am actively recruiting motivated Ph.D. students with a strong background in wireless communications, signal processing, or machine learning.",
+    "Prospective students should email me their CV, transcripts, and a short statement of research interests. Please include \"Prospective Student\" in the subject line.",
+    "Undergraduate and M.S. students interested in research are also welcome to reach out."
+  ]
+}

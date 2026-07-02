@@ -1,0 +1,46 @@
+@if (home$ | async; as home) {
+  <div class="page">
+    <app-section heading="About" anchor="about">
+      @for (para of home.about; track $index) {
+        <p>{{ para }}</p>
+      }
+    </app-section>
+
+    <app-section heading="Education" anchor="education">
+      <ul class="edu">
+        @for (item of home.education; track item.degree) {
+          <li>
+            <span class="edu__degree">{{ item.degree }}</span>
+            <span class="edu__inst">{{ item.institution }}</span>
+            <span class="edu__year">{{ item.year }}</span>
+          </li>
+        }
+      </ul>
+    </app-section>
+
+    <app-section heading="Research Interests" anchor="research">
+      <div class="research">
+        @for (area of home.researchAreas; track area.title) {
+          <span class="research__tag">{{ area.title }}</span>
+        }
+      </div>
+    </app-section>
+
+    <app-section heading="Awards & Honors" anchor="awards">
+      <ul class="awards">
+        @for (award of home.awards; track $index) {
+          <li>
+            <span class="awards__year">{{ award.year }}</span>
+            <span class="awards__desc">{{ award.description }}</span>
+          </li>
+        }
+      </ul>
+    </app-section>
+
+    <app-section heading="Openings" anchor="openings">
+      @for (para of home.openings; track $index) {
+        <p>{{ para }}</p>
+      }
+    </app-section>
+  </div>
+}
