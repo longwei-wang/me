@@ -1,6 +1,13 @@
 <div class="page">
   <h1 class="page__title">Publications</h1>
 
+  @if (scholarUrl(); as scholar) {
+    <p class="pub-note">
+      To see more of my publications, visit my
+      <a [href]="scholar" target="_blank" rel="noopener">Google Scholar</a>.
+    </p>
+  }
+
   @for (group of groups(); track group.year) {
     <section class="pub-year">
       <h2 class="pub-year__label">{{ group.year }}</h2>

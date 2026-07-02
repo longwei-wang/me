@@ -6,6 +6,14 @@
       }
     </app-section>
 
+    <app-section heading="Research Interests" anchor="research">
+      <div class="research">
+        @for (area of home.researchAreas; track area.title) {
+          <span class="research__tag">{{ area.title }}</span>
+        }
+      </div>
+    </app-section>
+
     <app-section heading="Education" anchor="education">
       <ul class="edu">
         @for (item of home.education; track item.degree) {
@@ -18,13 +26,7 @@
       </ul>
     </app-section>
 
-    <app-section heading="Research Interests" anchor="research">
-      <div class="research">
-        @for (area of home.researchAreas; track area.title) {
-          <span class="research__tag">{{ area.title }}</span>
-        }
-      </div>
-    </app-section>
+
 
     <app-section heading="Awards & Honors" anchor="awards">
       <ul class="awards">

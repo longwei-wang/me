@@ -23,6 +23,13 @@ export class PublicationsComponent {
   private readonly publications = toSignal(this.content.getPublications(), {
     initialValue: [] as Publication[],
   });
+  private readonly profile = toSignal(this.content.getProfile());
+
+  /** Google Scholar link pulled from the profile's social links. */
+  readonly scholarUrl = computed(
+    () =>
+      this.profile()?.social.find((link) => /scholar/i.test(link.label))?.url ?? null,
+  );
 
   /** Publications grouped by year, most recent first. */
   readonly groups = computed<YearGroup[]>(() => {
