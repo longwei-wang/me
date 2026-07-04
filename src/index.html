@@ -30,6 +30,15 @@
 
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
+  <!-- Google Analytics (GA4). Route page_views are sent by AnalyticsService. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-07B75KDNSM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-07B75KDNSM', { send_page_view: false });
+  </script>
+
   <!-- Structured data: helps Google build a Knowledge Panel / rich result -->
   <script type="application/ld+json">
   {

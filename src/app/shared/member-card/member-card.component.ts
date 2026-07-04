@@ -1,7 +1,8 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, inject } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { Member } from '../../models/content.models';
 import { DeobfuscatePipe } from '../pipes/deobfuscate.pipe';
+import { AnalyticsService } from '../../services/analytics.service';
 
 @Component({
   selector: 'app-member-card',
@@ -13,4 +14,14 @@ import { DeobfuscatePipe } from '../pipes/deobfuscate.pipe';
 })
 export class MemberCardComponent {
   @Input({ required: true }) member!: Member;
+
+  private readonly analytics = inject(AnalyticsService);
+
+  onEmailClick(): void {
+    this.analytics.track('email_click', { role: 'student', name: this.member.name });
+  }
+
+  onPortfolioClick(): void {
+    this.analytics.track('portfolio_click', { role: 'student', name: this.member.name });
+  }
 }

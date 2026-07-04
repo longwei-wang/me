@@ -6,6 +6,7 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ContentService } from './services/content.service';
 import { SeoService } from './services/seo.service';
+import { AnalyticsService } from './services/analytics.service';
 
 @Component({
   selector: 'app-root',
@@ -18,9 +19,11 @@ import { SeoService } from './services/seo.service';
 export class AppComponent {
   private readonly content = inject(ContentService);
   private readonly seo = inject(SeoService);
+  private readonly analytics = inject(AnalyticsService);
   readonly profile$ = this.content.getProfile();
 
   constructor() {
     this.seo.init();
+    this.analytics.init();
   }
 }

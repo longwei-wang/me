@@ -20,7 +20,7 @@
           </ul>
 
           <div class="intro__contact">
-            <a [href]="'mailto:' + (profile.contact.emailEncoded | deobfuscate)">
+            <a [href]="'mailto:' + (profile.contact.emailEncoded | deobfuscate)" (click)="onEmailClick()">
               {{ profile.contact.emailEncoded | deobfuscate }}
             </a>
             @if (profile.contact.phoneEncoded) {
