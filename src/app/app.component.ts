@@ -5,6 +5,7 @@ import { RouterOutlet } from '@angular/router';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ContentService } from './services/content.service';
+import { SeoService } from './services/seo.service';
 
 @Component({
   selector: 'app-root',
@@ -16,5 +17,10 @@ import { ContentService } from './services/content.service';
 })
 export class AppComponent {
   private readonly content = inject(ContentService);
+  private readonly seo = inject(SeoService);
   readonly profile$ = this.content.getProfile();
+
+  constructor() {
+    this.seo.init();
+  }
 }

@@ -34,14 +34,16 @@ jobs:
 
       - name: Build
         run: |
-          # Serve under the repository path, e.g. https://<user>.github.io/demo/
+          # Serve under the repository path, e.g. https://<user>.github.io/
           REPO_NAME="${GITHUB_REPOSITORY#*/}"
           npx ng build --configuration production --base-href "/${REPO_NAME}/"
 
       - name: Add SPA fallback + disable Jekyll
         run: |
           OUT="dist/drlongwei-portfolio/browser"
-          cp "$OUT/index.html" "$OUT/404.html"
+          # Prerendering emits a client-render shell (index.csr.html); use it as
+          # the fallback so unknown paths boot cleanly and the router redirects.
+          cp "$OUT/index.csr.html" "$OUT/404.html"
           touch "$OUT/.nojekyll"
 
       - name: Configure Pages
