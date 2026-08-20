@@ -1,14 +1,14 @@
 {
   "about": [
-    "I am an Assistant Professor of Computer Science working on explainable machine learning and trustworthy AI, with a focus on the interplay among explainability, robustness, and security. My research tackles two core challenges in modern AI: the black-box nature of deep learning models and the prevalence of hallucinations and adversarial vulnerabilities in machine learning systems.",
-    "My group builds models that are both understandable to humans and resilient to adversarial attacks, with applications spanning medical image analysis, materials discovery, and precision agriculture. My work has been published at venues including ICML, NeurIPS, TPAMI, ICDM, AAAI, JBHI etc."
+    "I am an Assistant Professor of Computer Science working on explainable and trustworthy AI, with a focus on the interplay among explainability, robustness, and security. My research focuses on two core challenges in modern AI: the black-box nature of deep learning models and the prevalence of hallucinations and adversarial vulnerabilities in machine learning systems.",
+    "In our IEEE TPAMI work, we developed Winsor-CAM, a human-tunable visual explanation method that improves the clarity and reliability of deep-network interpretations through layer-wise Winsorization. Our NeurIPS Spotlight paper established a connection between equivariance and adversarial robustness, showing how symmetry-aware representations can strengthen neural networks against adversarial perturbations. Our ICML work investigates the internal dynamics of LLM jailbreaks from a Hamiltonian perspective, providing new insights into how unsafe behaviors emerge and may be diagnosed. In IEEE JBHI, we introduced an explainable few-shot learning framework that combines interpretable evidence with active sample selection to support medical-image analysis when labeled data are limited. Our work bridging explainability and adversarial robustness—using model explanations to guide robust model refinement—appeared at IEEE ICDM and in the AAAI Symposium Series."
     ],
   "education": [
     { "degree": "Ph.D. in Computer Science", "institution": "Auburn University", "year": "2022" }
   ],
   "researchAreas": [
-    { "title": "Explainable AI" },
-    { "title": "Trustworthy AI: Safety, Robustness and Fairness" }
+    { "title": "Explainable AI: post-hoc explainability, intrinsic explainable model design, and causal representation learning" },
+    { "title": "Trustworthy AI: robustness, security,  safety, and privacy" }
   ],
   "awards": [
     {
