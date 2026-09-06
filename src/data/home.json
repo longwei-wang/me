@@ -1,16 +1,20 @@
 {
   "about": [
-    "I am an Assistant Professor of Computer Science working on explainable and trustworthy AI, with a focus on the interplay among explainability, robustness, and security. My research focuses on two core challenges in modern AI: the black-box nature of deep learning models and the prevalence of hallucinations and adversarial vulnerabilities in machine learning systems.",
-    "In our IEEE TPAMI work, we developed Winsor-CAM, a human-tunable visual explanation method that improves the clarity and reliability of deep-network interpretations through layer-wise Winsorization. Our NeurIPS Spotlight paper established a connection between equivariance and adversarial robustness, showing how symmetry-aware representations can strengthen neural networks against adversarial perturbations. Our ICML work investigates the internal dynamics of LLM jailbreaks from a Hamiltonian perspective, providing new insights into how unsafe behaviors emerge and may be diagnosed. In IEEE JBHI, we introduced an explainable few-shot learning framework that combines interpretable evidence with active sample selection to support medical-image analysis when labeled data are limited. Our work bridging explainability and adversarial robustness—using model explanations to guide robust model refinement—appeared at IEEE ICDM and in the AAAI Symposium Series."
+    "My group focuses on fundamental methodological advances in explainable and trustworthy artificial intelligence, with an emphasis on understanding, interpreting, and improving the internal mechanisms of modern deep learning systems and foundation models. Our research spans explainable AI, robust machine learning, mechanistic interpretability, causal reasoning, and AI security, with the goal of developing AI systems that are more transparent, reliable, and resilient to adversarial attacks. In parallel, we translate these methodological advances into high-impact applications, including medical imaging, smart agriculture, and scientific discovery, where explainability and trustworthiness are essential for supporting reliable human understanding and decision-making."
     ],
   "education": [
     { "degree": "Ph.D. in Computer Science", "institution": "Auburn University", "year": "2022" }
   ],
   "researchAreas": [
     { "title": "Explainable AI: post-hoc explainability, intrinsic explainable model design, and causal representation learning" },
-    { "title": "Trustworthy AI: robustness, security,  safety, and privacy" }
+    { "title": "Trustworthy AI: robustness, security,  safety, and privacy" },
+    { "title": "Applications: explainable AI for healthcare, medical imaging, smart agriculture, and scientific discovery" }
   ],
   "awards": [
+    {
+      "year": "2026",
+      "description": "Our work, “Resection-Cavity-Aware Segmentation of Brain Metastases for BraTS 2026,” has been accepted to the <strong>BraTS-METS Challenge</strong> at the <strong>29th International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2026).</strong>"
+    },
     {
       "year": "2026",
       "description": "Structured Multi-step Jailbreaking under a Hamiltonian Generative Formulation accepted to <strong>ICML 2026</strong>."
