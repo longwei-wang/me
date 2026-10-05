@@ -1,46 +1,50 @@
 {
   "about": [
-    "My group focuses on fundamental methodological advances in explainable and trustworthy artificial intelligence, with an emphasis on understanding, interpreting, and improving the internal mechanisms of modern deep learning systems and foundation models. Our research spans explainable AI, robust machine learning, mechanistic interpretability, causal reasoning, and AI security, with the goal of developing AI systems that are more transparent, reliable, and resilient to adversarial attacks. In parallel, we translate these methodological advances into high-impact applications, including medical imaging, smart agriculture, and scientific discovery, where explainability and trustworthiness are essential for supporting reliable human understanding and decision-making."
+    "My group focuses on methodological advances in explainable and trustworthy artificial intelligence, with an emphasis on understanding, interpreting, and improving the internal mechanisms of modern deep learning systems and foundation models. Our research spans explainable AI, robust machine learning, mechanistic interpretability, causal reasoning, and AI security, with the goal of developing AI systems that are more transparent, reliable, and resilient to adversarial attacks. In parallel, we translate these methodological advances into high-impact applications, including medical imaging, smart agriculture, and scientific discovery, where explainability and trustworthiness are essential for supporting reliable human understanding and decision-making."
     ],
   "education": [
     { "degree": "Ph.D. in Computer Science", "institution": "Auburn University", "year": "2022" }
   ],
   "researchAreas": [
-    { "title": "Explainable AI: post-hoc explainability, intrinsic explainable model design, and causal representation learning" },
-    { "title": "Trustworthy AI: robustness, security,  safety, and privacy" },
+    { "title": "Explainable AI: post-hoc explainability, and intrinsic explainable model design" },
+    { "title": "Trustworthy AI: robustness, security,  safety" },
     { "title": "Applications: explainable AI for healthcare, medical imaging, smart agriculture, and scientific discovery" }
   ],
   "awards": [
+      {
+      "year": "Sep 2026",
+      "description": "Our work, “Exploring Advertising Manipulation in Diffusion Image Generation,,” has been accepted to the <strong>The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026)</strong>"
+    },
     {
-      "year": "2026",
+      "year": "Aug 2026",
       "description": "Our work, “Resection-Cavity-Aware Segmentation of Brain Metastases for BraTS 2026,” has been accepted to the <strong>BraTS-METS Challenge</strong> at the <strong>29th International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2026).</strong>"
     },
     {
-      "year": "2026",
+      "year": "Jul 2026",
       "description": "Structured Multi-step Jailbreaking under a Hamiltonian Generative Formulation accepted to <strong>ICML 2026</strong>."
     },
     {
-      "year": "2026",
+      "year": "Feb 2026",
       "description": "Winsor-CAM accepted to <strong>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</strong>."
     },
     {
-      "year": "2026",
+      "year": "Jan 2026",
       "description": "Received the South Dakota Board of Regents Competitive Research Grant Award in support of our research on trustworthy AI for precision agriculture."
     },
     {
-      "year": "2026",
+      "year": "Jan 2026",
       "description": "Expert-Guided Explainable Few-Shot Learning with Active Sample Selection for Medical Image Analysis accepted to the <strong>IEEE Journal of Biomedical and Health Informatics (JBHI)</strong>."
     },
     {
-      "year": "2025",
+      "year": "Aug 2025",
       "description": "Received the Research Faculty Award, Department of Computer Science, University of South Dakota."
     },
     {
-      "year": "2025",
+      "year": "Apr 2025",
       "description": "Promoting Shape Bias in CNNs: Frequency-Based and Contrastive Regularization for Corruption Robustness received the Best Paper Award at <strong>ISPR 2025</strong>."
     },
     {
-      "year": "2025",
+      "year": "Aug 2025",
       "description": "Bridging Symmetry and Robustness: On the Role of Equivariance in Enhancing Adversarial Robustness selected for a <strong>NeurIPS 2025</strong> Spotlight."
     }
   ],
