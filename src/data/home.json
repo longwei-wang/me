@@ -1,14 +1,14 @@
 {
   "about": [
-    "My group focuses on methodological advances in explainable and trustworthy artificial intelligence, with an emphasis on understanding, interpreting, and improving the internal mechanisms of modern deep learning systems and foundation models. Our research spans explainable AI, robust machine learning, mechanistic interpretability, causal reasoning, and AI security, with the goal of developing AI systems that are more transparent, reliable, and resilient to adversarial attacks. In parallel, we translate these methodological advances into high-impact applications, including medical imaging, smart agriculture, and scientific discovery, where explainability and trustworthiness are essential for supporting reliable human understanding and decision-making."
+    "My group focuses on methodological advances in explainable and trustworthy artificial intelligence, with an emphasis on understanding, interpreting, and improving the internal mechanisms of modern deep learning systems and foundation models. Our research spans explainable AI, robust machine learning, mechanistic interpretability, causal reasoning, and AI security, with the goal of developing AI systems that are more transparent, reliable, and resilient to adversarial attacks. In parallel, we translate these methodological advances into high-impact applications, including medical analysis and scientific discovery, where explainability and trustworthiness are essential for supporting reliable human understanding and decision-making."
     ],
   "education": [
     { "degree": "Ph.D. in Computer Science", "institution": "Auburn University", "year": "2022" }
   ],
   "researchAreas": [
-    { "title": "Explainable AI: post-hoc explainability, and intrinsic explainable model design" },
-    { "title": "Trustworthy AI: robustness, security,  safety" },
-    { "title": "Applications: explainable AI for healthcare, medical imaging, smart agriculture, and scientific discovery" }
+    { "title": "Explainable AI: post-hoc explainability, mechanistic interpretability, and intrinsic explainable model design" },
+    { "title": "Trustworthy AI: robustness, security and safety" },
+    { "title": "Applications: explainable AI for healthcare, medical imaging, and scientific discovery" }
   ],
   "awards": [
       {
